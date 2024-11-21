@@ -1,0 +1,149 @@
+.customizer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+
+  .customizer-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .customizer-canvas {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .controls {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .controls label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+  }
+
+  .controls input[type='file'],
+  .controls input[type='text'],
+  .controls input[type='number'],
+  .controls input[type='color'],
+  .controls select {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s ease;
+  }
+
+  .controls input[type='file']:hover,
+  .controls input[type='text']:hover,
+  .controls input[type='number']:hover,
+  .controls input[type='color']:hover,
+  .controls select:hover {
+    border-color: #007bff;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+
+  button:active {
+    background-color: #004085;
+  }
+
+  button.red {
+    background-color: #dc3545;
+  }
+
+  button.red:hover {
+    background-color: #c82333;
+  }
+
+  button.red:active {
+    background-color: #a71d2a;
+  }
+
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  button:disabled:hover {
+    transform: none;
+  }
+
+  .zoom-controls {
+    display: flex;
+    gap: 10px;
+  }
+
+  .zoom-controls button {
+    flex: 1;
+  }
+
+  .controls div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .controls select {
+    flex: 1;
+  }
+
+
+  .controls input[type='color'] {
+    display: block;
+    width: 50px;
+    height: 40px;
+    padding: 0;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .controls input[type='color']:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  .controls input[type='color']:active {
+    transform: scale(1.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
